@@ -60,6 +60,6 @@ def returns_product(calculator, product):
 def returns_quotient(calculator, quotient):
     assert calculator.result == quotient
 
-@then('the calculator returns "<result>"')
+@then('the result is "<result>"')
 def returns_result(calculator, result):
     assert calculator.result == result

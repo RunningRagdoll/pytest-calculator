@@ -15,16 +15,16 @@ class Calculator:
         return self._result
 
     def add(self):
-        raise NotImplementedError("The function add is not implemented yet!")
+        self._result = self._a + self._b
 
     def subtract(self):
-        raise NotImplementedError("The function subtract is not implemented yet!")
+        self._result = self._a - self._b
 
     def multiply(self):
-        raise NotImplementedError("The function multiply is not implemented yet!")
+        self._result = self._a * self._b
 
     def divide(self):
-        raise NotImplementedError("The function divide is not implemented yet!")
+        self._result = self._a / self._b
 
     def tare(self):
-        raise NotImplementedError("The function tare is not implemented yet!")
+        self._result = 0
