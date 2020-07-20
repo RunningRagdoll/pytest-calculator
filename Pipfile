@@ -8,6 +8,8 @@ pytest = "*"
 pytest-bdd = "*"
 
 [packages]
+pytest = "*"
+pytest-bdd = "*"
 
 [requires]
 python_version = "3.8"
