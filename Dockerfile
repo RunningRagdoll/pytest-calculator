@@ -10,6 +10,6 @@ RUN pip install pipenv
 
 RUN pipenv install -r requirements.txt
 
-RUN ["pipenv", "py", "-m", "pytest", "-v",  "-junitxml=reports/result.xml"]
+RUN ["pipenv", "run", "python", "-m", "pytest", "-v",  "-junitxml=reports/result.xml"]
 
 CMD tail -f /dev/null
