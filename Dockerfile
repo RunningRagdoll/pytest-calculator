@@ -6,6 +6,8 @@ COPY . /pytest-calculator
 
 WORKDIR /pytest-calculator
 
+RUN pip install pipenv
+
 RUN pipenv install -r requirements.txt
 
 RUN ["pytest", "-v",  "-junitxml=reports/result.xml"]
